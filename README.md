@@ -6,7 +6,7 @@ Polynomial expressions for delta-T provided by NASA.
 
 When you calculate the positions of the sun and moon, you need TD (Terrestrial Dynamical TIme).
 However, we all live in UT (Universal Time), hence needs the parameter,
-so called **"delta-T"** (&Delta;T).
+so called **"delta-T" (&Delta;T)**.
 While NASA provide
 [look-up tables for deducted &Delta;Ts](https://eclipse.gsfc.nasa.gov/SEcat5/deltat.html),
 they also provide [simplified arithmetic expressions](https://eclipse.gsfc.nasa.gov/SEcat5/deltatpoly.html)
@@ -21,7 +21,7 @@ For NodeJS:
 npm install nasa-delta-t
 ```
 
-For browsers, simply download *[umd/nasa-delta-t.min.js](umd/nasa-delta-t.min.js)* and use it.
+For browsers, simply download *[dist/nasa-delta-t.min.js](dist/nasa-delta-t.min.js)* and use it.
 
 ## Usage
 

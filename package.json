@@ -1,6 +1,6 @@
 {
   "name": "nasa-delta-t",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Polynomial expressions for delta-T provided by NASA.",
   "main": "cjs/index.js",
   "jsdelivr": "./dist/nasa-delta-t.min.js",
