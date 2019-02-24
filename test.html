@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+<style>
+body {
+  font-family: -apple-system, Helvetica, "Segoe UI", "YuGothic", "Yu Gothic Medium", Meiryo, "MS PGothic", sans-serif
+}
+</style>
+</head>
+<body>
+
+<h1>nasa-delta-t</h1>
+
+<div style="font-size:2em;font-weight:bold;">
+  NasaDeltaT.getDeltaT(year, month)
+</div>
+
+<div id="message" style="margin-top:1em;width:480px;padding:0.5em;background-color:#eee;"></div>
+
+<script src="./dist/nasa-delta-t.min.js"></script>
+<script>
+window.onload = function () {
+  var now = new Date();
+  var year = now.getFullYear();
+  var month = now.getMonth() + 1;
+  var deltaT = NasaDeltaT.getDeltaT(year, month);
+  var message = '[year] ' + year + ' [month] ' + month + ' [deltaT] ' + deltaT;
+  console.log(message);
+  const el = document.getElementById('message');
+  if (el) {
+    el.innerHTML = message;
+  }
+};
+</script>
+
+</body>
+</html>

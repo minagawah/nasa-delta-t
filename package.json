@@ -1,0 +1,43 @@
+{
+  "name": "nasa-delta-t",
+  "version": "1.0.0",
+  "description": "Polynomial expressions for delta-T provided by NASA.",
+  "main": "cjs/index.js",
+  "jsdelivr": "./dist/nasa-delta-t.min.js",
+  "unpkg": "./dist/nasa-delta-t.min.js",
+  "scripts": {
+    "test": "tape -r @babel/register test/**/*.js",
+    "build:umd": "rm -fR dist/*.js && browserify --standalone NasaDeltaT src/index.js -o dist/nasa-delta-t.min.js -t [ babelify ] -g uglifyify -p [ licensify --includePrivate ]",
+    "build:cjs": "rm -fR cjs/*.js && babel src --out-dir cjs",
+    "build": "$npm_execpath run build:umd && $npm_execpath run build:cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minagawah/nasa-delta-t.git"
+  },
+  "keywords": [
+    "delta-T",
+    "NASA",
+    "Astronomy",
+    "Sun",
+    "Moon",
+    "Position"
+  ],
+  "author": "minagawah <minagawa@tokyo800.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minagawah/nasa-delta-t/issues"
+  },
+  "homepage": "https://github.com/minagawah/nasa-delta-t#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "licensify": "^3.1.3",
+    "tape": "^4.10.1",
+    "uglifyify": "^5.0.1"
+  }
+}
