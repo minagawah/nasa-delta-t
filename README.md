@@ -21,7 +21,7 @@ For NodeJS:
 npm install nasa-delta-t
 ```
 
-For browsers, simply download *[dist/nasa-delta-t.min.js](dist/nasa-delta-t.min.js)* and use it.
+For browsers, simply download [dist/nasa-delta-t.min.js](dist/nasa-delta-t.min.js) and use it.
 
 ## Usage
 
