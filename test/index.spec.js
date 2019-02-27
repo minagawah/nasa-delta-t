@@ -1,3 +1,4 @@
+/* eslint no-multi-spaces: [0] */
 const test = require('tape');
 const {
   getDecimalYear,

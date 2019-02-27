@@ -171,7 +171,7 @@ In case you're wondering, here are the installed NPM packages.
 Only for dev purposes.
 
 ```
-yarn add --dev @babel/core @babel/cli @babel/preset-env @babel/register browserify babelify uglifyify licensify tape
+yarn add --dev eslint eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node @babel/core @babel/cli @babel/preset-env @babel/register browserify babelify uglifyify licensify tape
 ```
 
 ## References

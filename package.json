@@ -1,11 +1,14 @@
 {
   "name": "nasa-delta-t",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Polynomial expressions for delta-T provided by NASA.",
   "main": "cjs/index.js",
   "jsdelivr": "./dist/nasa-delta-t.min.js",
   "unpkg": "./dist/nasa-delta-t.min.js",
   "scripts": {
+    "lint:src": "$npm_execpath eslint src/**/*.js",
+    "lint:test": "$npm_execpath eslint test/**/*.js",
+    "lint": "$npm_execpath run lint:src && $npm_execpath run lint:test",
     "test": "tape -r @babel/register test/**/*.js",
     "build:umd": "rm -fR dist/*.js && browserify --standalone NasaDeltaT src/index.js -o dist/nasa-delta-t.min.js -t [ babelify ] -g uglifyify -p [ licensify --includePrivate ]",
     "build:cjs": "rm -fR cjs/*.js && babel src --out-dir cjs",
@@ -18,10 +21,10 @@
   "keywords": [
     "delta-T",
     "NASA",
-    "Astronomy",
-    "Sun",
-    "Moon",
-    "Position"
+    "astronomy",
+    "sun",
+    "moon",
+    "position"
   ],
   "author": "minagawah <minagawa@tokyo800.jp>",
   "license": "MIT",
@@ -31,11 +34,19 @@
   "homepage": "https://github.com/minagawah/nasa-delta-t#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
+    "eslint": "^5.14.1",
+    "eslint-config-origamitower": "^1.2.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "licensify": "^3.1.3",
     "tape": "^4.10.1",
     "uglifyify": "^5.0.1"

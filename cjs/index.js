@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.getDeltaT = exports.getDeltaTFromDecimalYear = exports.getFunctionFromDecimalYear = exports.getAfterAD2150 = exports.getAD2050toAD2150 = exports.getAD2005toAD2050 = exports.getAD1986toAD2005 = exports.getAD1961toAD1986 = exports.getAD1941toAD1961 = exports.getAD1920toAD1941 = exports.getAD1900toAD1920 = exports.getAD1860toAD1900 = exports.getAD1800toAD1860 = exports.getAD1700toAD1800 = exports.getAD1600toAD1700 = exports.getAD500toAD1600 = exports.getBC500toAD500 = exports.getBeforeBC500 = exports.getDecimalYear = void 0;
 
+/* eslint brace-style: [0] */
+
 /**
  * All the polynomial expressions for delta-T (ΔT) are based on that of NASA's:
  * https://eclipse.gsfc.nasa.gov/SEcat5/deltatpoly.html
@@ -30,7 +32,7 @@ var getDecimalYear = function getDecimalYear() {
 /*
  * Before the year -500, calculate:
  * ΔT = -20 + 32 * u^2
- * where:	u = (y - 1820) / 100
+ * where: u = (y - 1820) / 100
  */
 
 
@@ -50,7 +52,7 @@ var getBeforeBC500 = function getBeforeBC500() {
  * seconds:
  *
  * ΔT = 10583.6 - 1014.41 * u + 33.78311 * u^2 - 5.952053 * u^3
- *   - 0.1798452 * u^4 + 0.022174192 * u^5 + 0.0090316521 * u^6 
+ *   - 0.1798452 * u^4 + 0.022174192 * u^5 + 0.0090316521 * u^6
  * where: u = y/100
  */
 
@@ -112,7 +114,7 @@ var getAD1700toAD1800 = function getAD1700toAD1800() {
 /**
  * Between years +1800 and +1860, calculate:
  *
- * ΔT = 13.72 - 0.332447 * t + 0.0068612 * t^2 + 0.0041116 * t^3 - 0.00037436 * t^4 
+ * ΔT = 13.72 - 0.332447 * t + 0.0068612 * t^2 + 0.0041116 * t^3 - 0.00037436 * t^4
  * + 0.0000121272 * t^5 - 0.0000001699 * t^6 + 0.000000000875 * t^7
  * where: t = y - 1800
 */
@@ -203,7 +205,7 @@ var getAD1961toAD1986 = function getAD1961toAD1986() {
 /**
  * Between years 1986 and 2005, calculate:
  *
- * ΔT = 63.86 + 0.3345 * t - 0.060374 * t^2 + 0.0017275 * t^3 + 0.000651814 * t^4 
+ * ΔT = 63.86 + 0.3345 * t - 0.060374 * t^2 + 0.0017275 * t^3 + 0.000651814 * t^4
  *   + 0.00002373599 * t^5
  * where: t = y - 2000
  */
@@ -248,7 +250,7 @@ var getAD2050toAD2150 = function getAD2050toAD2150() {
  * After 2150, calculate:
  *
  * ΔT = -20 + 32 * u^2
- * where:	u = (y-1820)/100
+ * where: u = (y-1820)/100
  */
 
 
