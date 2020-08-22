@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.getDeltaT = exports.getDeltaTFromDecimalYear = exports.getFunctionFromDecimalYear = exports.getAfterAD2150 = exports.getAD2050toAD2150 = exports.getAD2005toAD2050 = exports.getAD1986toAD2005 = exports.getAD1961toAD1986 = exports.getAD1941toAD1961 = exports.getAD1920toAD1941 = exports.getAD1900toAD1920 = exports.getAD1860toAD1900 = exports.getAD1800toAD1860 = exports.getAD1700toAD1800 = exports.getAD1600toAD1700 = exports.getAD500toAD1600 = exports.getBC500toAD500 = exports.getBeforeBC500 = exports.getDecimalYear = void 0;
+exports["default"] = exports.getDeltaT = exports.getDeltaTFromDecimalYear = exports.getFunctionFromDecimalYear = exports.getAfterAD2150 = exports.getAD2050toAD2150 = exports.getAD2005toAD2050 = exports.getAD1986toAD2005 = exports.getAD1961toAD1986 = exports.getAD1941toAD1961 = exports.getAD1920toAD1941 = exports.getAD1900toAD1920 = exports.getAD1860toAD1900 = exports.getAD1800toAD1860 = exports.getAD1700toAD1800 = exports.getAD1600toAD1700 = exports.getAD500toAD1600 = exports.getBC500toAD500 = exports.getBeforeBC500 = exports.getDecimalYear = void 0;
 
 /* eslint brace-style: [0] */
 
@@ -350,4 +350,4 @@ var _default = {
   getDeltaTFromDecimalYear: getDeltaTFromDecimalYear,
   getDeltaT: getDeltaT
 };
-exports.default = _default;
+exports["default"] = _default;
