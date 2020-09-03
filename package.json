@@ -1,6 +1,6 @@
 {
   "name": "nasa-delta-t",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Polynomial expressions for delta-T provided by NASA.",
   "main": "cjs/index.js",
   "jsdelivr": "./dist/nasa-delta-t.min.js",
@@ -26,7 +26,7 @@
     "moon",
     "position"
   ],
-  "author": "mina <mina@tokyo800.jp>",
+  "author": "Hiroki Minagawa <minagawah@tokyo800.jp>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/minagawah/nasa-delta-t/issues"
